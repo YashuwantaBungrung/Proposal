@@ -1,0 +1,259 @@
+*{
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    padding-top: 0;
+    margin-bottom: 50px;
+    margin-top: 42px;
+    background-color: brown;
+}
+
+.lefthalf{
+    background-image: url(Images/snehhome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.righthalf{
+    background-image: url(Images/snehhomeedited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.headercontent{
+    /*font-family: 'Comic Sans MS', cursive, sans-serif;*/
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 22px;
+    /*color: #FF6347;*/
+    color: wheat;
+    position: relative;
+    padding-left: 50px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+    color: wheat;
+}
+
+.poemintro{
+    padding-bottom: 250px;
+}
+
+.slide{
+    height: 100%;
+    width: 150px;
+    position: relative;
+    transition: 0.5s ease;
+    transform: translatey(-1100px);
+    background-color: wheat;
+}
+
+.menu{
+    color: #FF6347;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 80px;
+    pointer-events: none;
+    padding-right: 0;
+    margin-top: 0;
+}
+
+ul li{
+    list-style: none;
+
+}
+
+ul{
+    padding-left: 0;
+}
+
+ul li a{
+    color: #FF6347;
+    font-weight: 500;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+    height: 55px;
+    font-size: 18px;
+}
+
+ul li a{
+    color: #FF6347;
+    background-color: wheat;
+}
+
+ul li a:hover{
+    transform: scale(1.3);
+}
+
+ul li a #homes{
+    padding-top: 5px;
+}
+
+ul li a i{
+    width: 35px;
+    text-align: center;
+    transition: 0.5s ease;  
+}
+
+ul li a i:hover{
+    transform: scale(1.5);
+}
+
+input{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.toggle{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 10px;
+    z-index: 1;
+    right: 15px;
+    margin-right: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.15s ease;
+}
+
+.toggle:hover{
+    transform: scale(1.2);
+}
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: wheat;
+    border-radius: 50px;
+    transition: 0.s ease;
+}
+
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 10px #FF6347;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 22px;
+    color: wheat;
+    position: relative;
+    padding-left: 180px;
+    font-weight: lighter;
+    font-style: italic;
+    width: 500px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+input, textarea{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button{
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form button{
+    width: 500px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background-color: wheat;
+    color: black;
+}
+
+button{
+    background-color: lightcoral;
+    transform: 0.5s ease;
+    margin-right: 15px;
+    color: wheat;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: wheat;
+    color: lightcoral;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+}
+
